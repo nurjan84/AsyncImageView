@@ -7,17 +7,17 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.nurjan84:AsyncImageView:1.0.0'
+    compile 'com.github.nurjan84:AsyncImageView:1.0.1'
 }
 ```
 Usage:
 
 ```
- <kz.nurzhan.asyncimageview.AsyncImageView
+  <kz.nurzhan.asyncimageview.AsyncImageView
         android:id="@+id/image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:placeholder = "@drawable/placeholder"
+        app:placeholderDrawable = "@drawable/placeholder"
         />
         
         
@@ -29,5 +29,5 @@ asyncImageView.load(resourceId);
 ```
 and you can cancel loading
 ```
-asyncImageView.canceLoading();
+asyncImageView.cancelLoading();
 ```
