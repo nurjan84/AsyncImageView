@@ -44,5 +44,5 @@ and you can cancel loading
 asyncImageView.cancelLoading();
 ```
 
-
+![2017-12-04 17 36 07](https://user-images.githubusercontent.com/6967566/33550892-beccca78-d919-11e7-9ffe-3d7638b8ff16.png)
 
