@@ -29,5 +29,5 @@ asyncImageView.load(resourceId);
 ```
 and you can cancel loading
 ```
-asyncImageView.canceLoading();
+asyncImageView.cancelLoading();
 ```
