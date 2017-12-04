@@ -4,14 +4,14 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
 
-public class AsyncImageView extends AppCompatImageView {
+public class AsyncImageView extends ImageView {
 
     private Drawable placeholder;
 
