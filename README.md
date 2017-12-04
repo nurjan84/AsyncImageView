@@ -13,11 +13,11 @@ dependencies {
 Usage:
 
 ```
- <kz.nurzhan.asyncimageview.AsyncImageView
+  <kz.nurzhan.asyncimageview.AsyncImageView
         android:id="@+id/image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:placeholder = "@drawable/placeholder"
+        app:placeholderDrawable = "@drawable/placeholder"
         />
         
         
