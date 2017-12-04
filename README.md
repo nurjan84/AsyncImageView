@@ -7,7 +7,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.nurjan84:AsyncImageView:-SNAPSHOT'
+    compile 'com.github.nurjan84:AsyncImageView:1.0.0'
 }
 ```
 Usage:
