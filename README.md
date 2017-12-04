@@ -1,4 +1,6 @@
 
+Based on Picasso
+
 ```
 allprojects {
     repositories {
