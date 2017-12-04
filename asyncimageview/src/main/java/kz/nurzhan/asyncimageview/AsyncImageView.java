@@ -39,7 +39,6 @@ public class AsyncImageView extends AppCompatImageView {
         }else {
             Picasso.with(getContext()).load(path).into(this);
         }
-
     }
     public void load (Uri uri){
         if(placeholder!=null){
@@ -47,7 +46,6 @@ public class AsyncImageView extends AppCompatImageView {
         }else {
             Picasso.with(getContext()).load(uri).into(this);
         }
-
     }
     public void load (File file){
         if(placeholder!=null){
@@ -55,7 +53,13 @@ public class AsyncImageView extends AppCompatImageView {
         }else {
             Picasso.with(getContext()).load(file).into(this);
         }
-
+    }
+    public void load (int resourceId){
+        if(placeholder!=null){
+            Picasso.with(getContext()).load(resourceId).placeholder(placeholder).into(this);
+        }else {
+            Picasso.with(getContext()).load(resourceId).into(this);
+        }
     }
 
     public void canceLoading(){
