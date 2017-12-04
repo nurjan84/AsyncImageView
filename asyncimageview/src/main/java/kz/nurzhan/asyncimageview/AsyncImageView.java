@@ -69,7 +69,7 @@ public class AsyncImageView extends AppCompatImageView {
         }
     }
 
-    public void canceLoading(){
+    public void cancelLoading(){
         Picasso.with(getContext()).cancelRequest(this);
     }
 
