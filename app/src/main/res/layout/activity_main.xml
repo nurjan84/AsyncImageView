@@ -21,4 +21,13 @@
         app:placeholderDrawable = "@drawable/placeholder"
         />
 
+    <kz.nurzhan.asyncimageview.AsyncCircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        app:placeholderDrawable = "@drawable/placeholder"
+        />
+
 </LinearLayout>

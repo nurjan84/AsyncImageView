@@ -11,6 +11,7 @@ import com.squareup.picasso.Picasso;
 public class MainActivity extends AppCompatActivity {
 
     AsyncImageView asyncImageView;
+    AsyncCircleImageView asyncCircleImageView;
     Button loadButton;
 
     @Override
@@ -20,12 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         asyncImageView=findViewById(R.id.image);
+        asyncCircleImageView = findViewById(R.id.circleImage);
         loadButton = findViewById(R.id.loadButton);
 
         loadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 asyncImageView.load("https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg");
+                asyncCircleImageView.load("https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg");
             }
         });
 
