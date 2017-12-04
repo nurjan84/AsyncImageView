@@ -9,7 +9,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.nurjan84:AsyncImageView:1.0.1'
+    compile 'com.github.nurjan84:AsyncImageView:1.0.2'
 }
 ```
 Usage:
