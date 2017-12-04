@@ -18,7 +18,7 @@
         android:id="@+id/image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:placeholder = "@drawable/placeholder"
+        app:placeholderDrawable = "@drawable/placeholder"
         />
 
 </LinearLayout>

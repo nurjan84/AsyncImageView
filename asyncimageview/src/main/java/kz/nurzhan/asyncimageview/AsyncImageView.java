@@ -26,11 +26,18 @@ public class AsyncImageView extends AppCompatImageView {
                 R.styleable.asyncImageView,
                 0, 0);
         try {
-            this.placeholder = a.getDrawable(R.styleable.asyncImageView_placeholder);
+            this.placeholder = a.getDrawable(R.styleable.asyncImageView_placeholderDrawable);
             this.setImageDrawable(placeholder);
         } finally {
             a.recycle();
         }
+    }
+
+    public void setPlaceholder(Drawable resourceId){
+        this.placeholder = resourceId;
+    }
+    public Drawable getPlaceholder(){
+        return this.placeholder;
     }
 
     public void load (String path){

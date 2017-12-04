@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="asyncImageView">
-        <attr name="placeholder" format="integer" />
+        <attr name="placeholderDrawable" format="integer" />
     </declare-styleable>
 </resources>
