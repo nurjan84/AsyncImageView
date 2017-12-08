@@ -41,7 +41,7 @@ public class AsyncImageView extends ImageView {
     }
 
     public void load (String path){
-        if(path!=null && !path.equals("")){
+        if(path!=null && path.length()>0){
             if(placeholder!=null){
                 Picasso.with(getContext()).load(path).placeholder(placeholder).into(this);
             }else {
