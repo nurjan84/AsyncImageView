@@ -41,24 +41,30 @@ public class AsyncImageView extends ImageView {
     }
 
     public void load (String path){
-        if(placeholder!=null){
-            Picasso.with(getContext()).load(path).placeholder(placeholder).into(this);
-        }else {
-            Picasso.with(getContext()).load(path).into(this);
+        if(path!=null && !path.equals("")){
+            if(placeholder!=null){
+                Picasso.with(getContext()).load(path).placeholder(placeholder).into(this);
+            }else {
+                Picasso.with(getContext()).load(path).into(this);
+            }
         }
     }
     public void load (Uri uri){
-        if(placeholder!=null){
-            Picasso.with(getContext()).load(uri).placeholder(placeholder).into(this);
-        }else {
-            Picasso.with(getContext()).load(uri).into(this);
+        if(uri!=null){
+            if(placeholder!=null){
+                Picasso.with(getContext()).load(uri).placeholder(placeholder).into(this);
+            }else {
+                Picasso.with(getContext()).load(uri).into(this);
+            }
         }
     }
     public void load (File file){
-        if(placeholder!=null){
-            Picasso.with(getContext()).load(file).placeholder(placeholder).into(this);
-        }else {
-            Picasso.with(getContext()).load(file).into(this);
+        if(file!=null){
+            if(placeholder!=null){
+                Picasso.with(getContext()).load(file).placeholder(placeholder).into(this);
+            }else {
+                Picasso.with(getContext()).load(file).into(this);
+            }
         }
     }
     public void load (int resourceId){
